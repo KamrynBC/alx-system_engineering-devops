@@ -1,2 +1,2 @@
 #!/bin/bash
-echo $PATH |tr "/" " " | tr " " "\n" | tail -n 12 | wc -l | grep -vF ':'
+echo $PATH |tr "/" " " | tr " " "\n" | tail -n 12 | grep -vF ':' | wc -l
