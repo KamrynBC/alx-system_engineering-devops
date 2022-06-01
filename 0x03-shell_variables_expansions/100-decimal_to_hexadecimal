@@ -1,2 +1,2 @@
 #!/bin/bash
-echo $DECIMAL | tr -ds "[:digit:]" "[:xdigit:]"
+printf '%x\n' $DECIMAL
