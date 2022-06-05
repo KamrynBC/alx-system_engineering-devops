@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -laRS | grep '.gif$' | tr -s ' ' | cut -d " " -f 5,9 | cut -d "." -f 1 | cut -d " " -f 2  
+ls -laRS | find -type f -name "*.gif" -ls | tr -s " " | cut -d " " -f 7,11 | sort -nr | cut -d "." -f 1,2 | tr -d "/" | tr -d "." | cut -d " " -f 2 
